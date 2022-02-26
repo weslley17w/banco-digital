@@ -30,6 +30,12 @@ public abstract class Conta implements IConta {
         contaDestino.depositar(valor);
     }
 
+    protected void ImprimirInfosComuns() {
+        System.out.println(String.format("Agencia: %d", this.agencia));
+        System.out.println(String.format("Conta: %d", this.numero));
+        System.out.println(String.format("Saldo: %.2f", this.saldo));
+    }
+
     public int getAgencia() {
         return agencia;
     }

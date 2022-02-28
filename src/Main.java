@@ -3,7 +3,7 @@ public class Main {
         Conta cc = new ContaCorrente();
         cc.depositar(100);
         Conta cp = new ContaPopanca();
-
+        cc.transferir(50, cp);
         cc.imprimirExtrato();
         cp.imprimirExtrato();
     }
